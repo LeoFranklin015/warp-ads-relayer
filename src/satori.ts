@@ -10,10 +10,6 @@
 
  }
 
- async function loadYogaWasm() {
-  const { Yoga } = await import('yoga-wasm-web');
-  return Yoga;
-}
 
 
   export default async function satoriFunc( frameImg : string , addImg: string , desc : string , title : string) {
@@ -35,7 +31,7 @@
 //             <p style="font-size: 10px; align-self: center; max-width: 180px; display: flex; white-space: pre-wrap; word-wrap: break-word;">
 //     ${title}
 // </p>
-const yoga = await loadYogaWasm();
+
 
    const inter = fetch(
   'https://og-playground.vercel.app/inter-latin-ext-400-normal.woff'
